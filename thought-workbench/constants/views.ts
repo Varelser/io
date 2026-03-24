@@ -1,0 +1,41 @@
+export const VIEW_TYPES = [
+  "sphere",
+  "workspace",
+  "network",
+  "mindmap",
+  "canvas2d",
+  "folder",
+  "depth",
+  "journal",
+  "calendar",
+  "intake",
+  "stats",
+  "task",
+  "table",
+  "review",
+  "timeline",
+  "diff",
+  "maintenance",
+] as const;
+
+export type ViewType = (typeof VIEW_TYPES)[number];
+
+export const VIEW_LABELS: Record<ViewType, { ja: string; en: string; icon: string }> = {
+  sphere:    { ja: "球体",         en: "Sphere",    icon: "◎" },
+  workspace: { ja: "マップ",       en: "Map",       icon: "⬡" },
+  network:   { ja: "ネットワーク", en: "Network",   icon: "⟁" },
+  mindmap:   { ja: "マインドマップ", en: "Mindmap", icon: "⌥" },
+  canvas2d:  { ja: "2Dキャンバス", en: "Canvas 2D", icon: "▧" },
+  folder:    { ja: "階層",         en: "Folder",    icon: "⊞" },
+  depth:     { ja: "深度",         en: "Depth",     icon: "▽" },
+  journal:   { ja: "ジャーナル",   en: "Journal",   icon: "☰" },
+  calendar:  { ja: "カレンダー",   en: "Calendar",  icon: "📅" },
+  intake:    { ja: "📥インテーク", en: "📥Intake",   icon: "📥" },
+  stats:     { ja: "統計",         en: "Stats",     icon: "▤" },
+  task:      { ja: "タスク",       en: "Task",      icon: "☑" },
+  table:     { ja: "テーブル",     en: "Table",     icon: "⊞" },
+  review:    { ja: "レビュー",     en: "Review",    icon: "⟳" },
+  timeline:  { ja: "タイムライン", en: "Timeline",  icon: "⏤" },
+  diff:      { ja: "差分比較",     en: "Diff",      icon: "⇔" },
+  maintenance: { ja: "保守",       en: "Maintenance", icon: "⚙" },
+};

@@ -1,0 +1,16 @@
+{
+  "name": "thought-workbench-bridge",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Obsidian plugin scaffold for Thought Workbench integration",
+  "main": "main.js",
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "dev": "node esbuild.mjs --watch"
+  },
+  "devDependencies": {
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.25.0",
+    "obsidian": "^1.8.7"
+  }
+}

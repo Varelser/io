@@ -1,0 +1,105 @@
+{
+  "name": "thought-workbench-web",
+  "generatedAt": "2026-03-21T09:00:43.168Z",
+  "sourceDist": "dist/",
+  "contents": [
+    {
+      "path": "app/",
+      "note": "Static web app bundle for deployment",
+      "files": [
+        {
+          "path": "app/assets/app-core-DW1grwlN.js",
+          "size": 182517
+        },
+        {
+          "path": "app/assets/app-panels-DA9rfQLy.js",
+          "size": 74617
+        },
+        {
+          "path": "app/assets/app-panels-deferred-C21MP1LQ.js",
+          "size": 70205
+        },
+        {
+          "path": "app/assets/app-spatial-C99w6Ej-.js",
+          "size": 34434
+        },
+        {
+          "path": "app/assets/app-views-BMgx-xJr.js",
+          "size": 88827
+        },
+        {
+          "path": "app/assets/index-BSXJiD-L.css",
+          "size": 27104
+        },
+        {
+          "path": "app/assets/index-Bvnqw4WE.js",
+          "size": 67017
+        },
+        {
+          "path": "app/assets/pdf.worker.min-B_fnEKel.mjs",
+          "size": 1239047
+        },
+        {
+          "path": "app/assets/vendor-docio-DJA4Ys-e.js",
+          "size": 154323
+        },
+        {
+          "path": "app/assets/vendor-pdf-3-Yqd_nx.js",
+          "size": 447498
+        },
+        {
+          "path": "app/assets/vendor-runtime-YH0EB74N.js",
+          "size": 497623
+        },
+        {
+          "path": "app/favicon.svg",
+          "size": 1018
+        },
+        {
+          "path": "app/icon-maskable.svg",
+          "size": 1091
+        },
+        {
+          "path": "app/icon.svg",
+          "size": 1045
+        },
+        {
+          "path": "app/index.html",
+          "size": 1688
+        },
+        {
+          "path": "app/manifest.webmanifest",
+          "size": 1428
+        },
+        {
+          "path": "app/pwa-screenshot-narrow.svg",
+          "size": 2506
+        },
+        {
+          "path": "app/pwa-screenshot-wide.svg",
+          "size": 2922
+        },
+        {
+          "path": "app/sw.js",
+          "size": 2519
+        },
+        {
+          "path": "app/workbox-354287e6.js",
+          "size": 22350
+        }
+      ]
+    },
+    {
+      "path": "README.md",
+      "note": "High-level deployment and usage summary"
+    },
+    {
+      "path": "INSTALL.md",
+      "note": "Setup and deployment checklist"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "note": "Release summary and milestone changelog"
+    }
+  ]
+}

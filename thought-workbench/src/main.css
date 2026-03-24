@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Theme variable defaults (dark) ── */
+:root {
+  --tw-bg: #050810;
+  --tw-bg-panel: rgba(6,8,16,0.88);
+  --tw-bg-card: rgba(255,255,255,0.025);
+  --tw-bg-input: rgba(0,2,8,0.55);
+  --tw-border: rgba(180,190,255,0.11);
+  --tw-border-strong: rgba(180,190,255,0.22);
+  --tw-text: rgba(228,232,255,0.92);
+  --tw-text-dim: rgba(178,186,228,0.62);
+  --tw-text-muted: rgba(128,138,188,0.42);
+  --tw-accent: #818cf8;
+  --tw-danger: #f87171;
+  --tw-button-bg: #0a0c1a;
+  --tw-button-text: #c4c9ee;
+  --tw-slider: #818cf8;
+  --tw-sphere: #c8ccee;
+  --tw-grid: #8890b8;
+  --tw-edge: #a8b4d8;
+  --tw-sphere-fill: rgba(212,212,216,0.08);
+  --tw-sphere-stroke: rgba(212,212,216,0.32);
+  --tw-sphere-glow-strong: rgba(212,212,216,0.12);
+  --tw-sphere-glow-soft: rgba(212,212,216,0.04);
+  --tw-sphere-pulse-color: rgba(129,140,248,0.55);
+  --tw-sphere-node-glow: rgba(212,212,216,0.22);
+  --tw-sphere-edge-selected: rgba(129,140,248,0.7);
+  --tw-sphere-axis: rgba(212,212,216,0.14);
+  --tw-sphere-label-stroke: rgba(212,212,216,0.24);
+  --tw-sphere-node-ring: rgba(212,212,216,0.52);
+  --tw-grid-stroke: rgba(161,161,170,0.26);
+  --tw-grid-muted: rgba(161,161,170,0.12);
+  --tw-canvas-grid: rgba(161,161,170,0.10);
+  --tw-canvas-dot: rgba(161,161,170,0.18);
+  --tw-edge-stroke: rgba(203,213,225,0.24);
+  --tw-edge-muted: rgba(203,213,225,0.18);
+  --tw-font-scale: 1;
+  --tw-left-w: 168px;
+  --tw-right-w: 286px;
+}
+
+html,
+body,
+#root {
+  background: var(--tw-bg);
+  color: var(--tw-text);
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Mono', 'Menlo', 'Monaco', 'Cascadia Code', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="range"] {
+  accent-color: var(--tw-slider) !important;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="light"] [class~="bg-[#020202]"],
+[data-theme-canvas-custom="true"] [class~="bg-[#020202]"] {
+  background-color: var(--tw-bg) !important;
+}
+
+[data-theme-canvas-custom="true"] [class~="bg-[#050505]"],
+[data-theme-canvas-custom="true"] [class~="bg-[#030303]"] {
+  background-color: color-mix(in srgb, var(--tw-bg) 92%, #000 8%) !important;
+}
+
+[data-theme="light"] [class*="bg-black/"] {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+[data-theme="light"] [class~="bg-black/60"] {
+  background-color: var(--tw-bg-input) !important;
+}
+
+[data-theme="light"] [class*="bg-white/"] {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+[data-theme="light"] [class*="border-white/"] {
+  border-color: var(--tw-border) !important;
+}
+
+[data-theme="light"] [class~="border-white"] {
+  border-color: rgba(0, 0, 0, 0.18) !important;
+}
+
+[data-theme="light"] [class~="text-white"],
+[data-theme-text-custom="true"] [class~="text-white"] {
+  color: var(--tw-text) !important;
+}
+
+[data-theme="light"] [class*="text-white/"],
+[data-theme-text-custom="true"] [class*="text-white/"] {
+  color: var(--tw-text-dim) !important;
+}
+
+[data-theme="light"] [class~="text-white/92"],
+[data-theme="light"] [class~="text-white/84"],
+[data-theme="light"] [class~="text-white/82"],
+[data-theme="light"] [class~="text-white/80"],
+[data-theme="light"] [class~="text-white/74"],
+[data-theme="light"] [class~="text-white/72"],
+[data-theme="light"] [class~="text-white/68"],
+[data-theme="light"] [class~="text-white/66"],
+[data-theme="light"] [class~="text-white/64"],
+[data-theme="light"] [class~="text-white/60"],
+[data-theme="light"] [class~="text-white/58"],
+[data-theme="light"] [class~="text-white/54"],
+[data-theme="light"] [class~="text-white/52"],
+[data-theme="light"] [class~="text-white/46"],
+[data-theme="light"] [class~="text-white/42"],
+[data-theme-text-custom="true"] [class~="text-white/92"],
+[data-theme-text-custom="true"] [class~="text-white/84"],
+[data-theme-text-custom="true"] [class~="text-white/82"],
+[data-theme-text-custom="true"] [class~="text-white/80"],
+[data-theme-text-custom="true"] [class~="text-white/74"],
+[data-theme-text-custom="true"] [class~="text-white/72"],
+[data-theme-text-custom="true"] [class~="text-white/68"],
+[data-theme-text-custom="true"] [class~="text-white/66"],
+[data-theme-text-custom="true"] [class~="text-white/64"],
+[data-theme-text-custom="true"] [class~="text-white/60"],
+[data-theme-text-custom="true"] [class~="text-white/58"],
+[data-theme-text-custom="true"] [class~="text-white/54"],
+[data-theme-text-custom="true"] [class~="text-white/52"],
+[data-theme-text-custom="true"] [class~="text-white/46"],
+[data-theme-text-custom="true"] [class~="text-white/42"] {
+  color: var(--tw-text-dim) !important;
+}
+
+[data-theme="light"] [class~="text-white/40"],
+[data-theme="light"] [class~="text-white/38"],
+[data-theme="light"] [class~="text-white/36"],
+[data-theme="light"] [class~="text-white/35"],
+[data-theme="light"] [class~="text-white/34"],
+[data-theme="light"] [class~="text-white/32"],
+[data-theme="light"] [class~="text-white/30"],
+[data-theme="light"] [class~="text-white/28"],
+[data-theme="light"] [class~="text-white/26"],
+[data-theme="light"] [class~="text-white/25"],
+[data-theme="light"] [class~="text-white/24"],
+[data-theme="light"] [class~="text-white/22"],
+[data-theme="light"] [class~="text-white/20"],
+[data-theme-text-custom="true"] [class~="text-white/40"],
+[data-theme-text-custom="true"] [class~="text-white/38"],
+[data-theme-text-custom="true"] [class~="text-white/36"],
+[data-theme-text-custom="true"] [class~="text-white/35"],
+[data-theme-text-custom="true"] [class~="text-white/34"],
+[data-theme-text-custom="true"] [class~="text-white/32"],
+[data-theme-text-custom="true"] [class~="text-white/30"],
+[data-theme-text-custom="true"] [class~="text-white/28"],
+[data-theme-text-custom="true"] [class~="text-white/26"],
+[data-theme-text-custom="true"] [class~="text-white/25"],
+[data-theme-text-custom="true"] [class~="text-white/24"],
+[data-theme-text-custom="true"] [class~="text-white/22"],
+[data-theme-text-custom="true"] [class~="text-white/20"] {
+  color: var(--tw-text-muted) !important;
+}
+
+[data-theme="light"] [class~="hover:bg-white/[0.03]"]:hover,
+[data-theme="light"] [class~="hover:bg-white/[0.08]"]:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--tw-border-strong, rgba(180,190,255,0.22)); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--tw-accent); }
+
+/* UI micro-transitions */
+button, input, select { transition: all 0.12s ease; }
+
+/* Input focus ring */
+input:focus-visible, select:focus-visible {
+  outline: 1.5px solid var(--tw-accent) !important;
+  outline-offset: 0px;
+  border-color: color-mix(in srgb, var(--tw-accent) 50%, var(--tw-border)) !important;
+}

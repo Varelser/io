@@ -1,0 +1,10 @@
+{
+  "id": "thought-workbench-bridge",
+  "name": "Thought Workbench Bridge",
+  "version": "0.0.1",
+  "minAppVersion": "1.5.0",
+  "description": "Scaffold plugin for Thought Workbench vault capture and future sync flows.",
+  "author": "s_seq",
+  "authorUrl": "https://github.com/",
+  "isDesktopOnly": false
+}

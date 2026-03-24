@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08101e"/>
+      <stop offset="100%" stop-color="#121c34"/>
+    </linearGradient>
+    <linearGradient id="hero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="28" y="24" width="1224" height="672" rx="28" fill="#0b1222" stroke="#24324e"/>
+  <rect x="48" y="48" width="220" height="624" rx="22" fill="#10192f"/>
+  <rect x="286" y="48" width="654" height="624" rx="22" fill="#0d1628"/>
+  <rect x="958" y="48" width="274" height="624" rx="22" fill="#10192f"/>
+  <rect x="306" y="68" width="614" height="84" rx="18" fill="url(#hero)" stroke="#234460"/>
+  <text x="334" y="112" fill="#e5eefc" font-size="34" font-family="IBM Plex Sans, Arial, sans-serif" font-weight="700">Thought Workbench</text>
+  <text x="334" y="142" fill="#9fb3d7" font-size="18" font-family="IBM Plex Sans, Arial, sans-serif">Multi-pane knowledge mapping with branches, review, and timeline analysis</text>
+  <g fill="#15213b" stroke="#263552">
+    <rect x="66" y="86" width="184" height="38" rx="12"/>
+    <rect x="66" y="138" width="184" height="102" rx="16"/>
+    <rect x="66" y="256" width="184" height="102" rx="16"/>
+    <rect x="66" y="374" width="184" height="102" rx="16"/>
+    <rect x="66" y="492" width="184" height="102" rx="16"/>
+  </g>
+  <g fill="#14213a" stroke="#27476b">
+    <rect x="306" y="174" width="296" height="216" rx="20"/>
+    <rect x="624" y="174" width="296" height="216" rx="20"/>
+    <rect x="306" y="410" width="614" height="242" rx="20"/>
+  </g>
+  <g fill="none" stroke="#7dd3fc" stroke-width="6" stroke-linecap="round">
+    <path d="M382 298L500 244 610 308 734 216 840 286"/>
+    <path d="M382 540L486 500 586 560 698 474 824 544"/>
+  </g>
+  <g fill="#f8fafc">
+    <circle cx="500" cy="244" r="14"/>
+    <circle cx="610" cy="308" r="14"/>
+    <circle cx="734" cy="216" r="14"/>
+    <circle cx="840" cy="286" r="14"/>
+  </g>
+  <g fill="#15213b" stroke="#263552">
+    <rect x="978" y="84" width="234" height="118" rx="16"/>
+    <rect x="978" y="220" width="234" height="140" rx="16"/>
+    <rect x="978" y="378" width="234" height="118" rx="16"/>
+    <rect x="978" y="514" width="234" height="118" rx="16"/>
+  </g>
+  <g fill="#cbd5e1" font-family="IBM Plex Sans, Arial, sans-serif">
+    <text x="998" y="118" font-size="20" font-weight="700">Inspector</text>
+    <text x="998" y="254" font-size="20" font-weight="700">PageRank</text>
+    <text x="998" y="412" font-size="20" font-weight="700">Scenario Branch</text>
+    <text x="998" y="548" font-size="20" font-weight="700">Review</text>
+  </g>
+</svg>
